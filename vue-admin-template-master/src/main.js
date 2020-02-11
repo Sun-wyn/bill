@@ -14,6 +14,7 @@ import router from './router'
 
 import '@/icons' // icon
 import '@/permission' // permission control
+// import i18n from './lang'
 
 /**
  * If you don't want to use mock-server

@@ -9,9 +9,6 @@
       </div>
 
       <el-form-item prop="username">
-        <!-- <span class="svg-container">
-          <svg-icon icon-class="user" />
-        </span> -->
         <el-input
           ref="username"
           v-model="loginForm.username"
@@ -24,9 +21,6 @@
       </el-form-item>
 
       <el-form-item prop="password">
-        <!-- <span class="svg-container">
-          <svg-icon icon-class="password" />
-        </span> -->
         <el-input
           :key="passwordType"
           ref="password"
@@ -38,9 +32,6 @@
           auto-complete="on"
           @keyup.enter.native="handleLogin"
         />
-        <!-- <span class="show-pwd" @click="showPwd">
-          <svg-icon :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'" />
-        </span> -->
       </el-form-item>
 
       <el-button :loading="loading" class="loginBtn" @click.native.prevent="handleLogin">登 录</el-button>
@@ -145,7 +136,6 @@ $input_color:#B1B1B1;
 .login-container {
   .el-input {
     display: inline-block;
-    // height: 47px;
     width: 85%;
 
     input {
@@ -169,7 +159,6 @@ $input_color:#B1B1B1;
   .el-form-item {
     width: 480px;
     border: none;
-    // background: rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     color: #454545;
   }
@@ -199,18 +188,16 @@ $dark_green:#27745B;
 .login-container {
   min-height: 100%;
   width: 100%;
-  background: $bg url("../../assets/login/bg.png") no-repeat right bottom;
+  min-width: 1440px;
+  background: $bg url("../../assets/login/bg.png") no-repeat right;
   overflow: hidden;
+  background-size:contain;
 
   .login-form {
-    position: relative;
     width: 880px;
-    max-width: 100%;
-    padding: 160px 35px 30px 119px;
-    // margin: 0 auto;
+    padding: 3% 35px 30px 119px;
     overflow: hidden;
   }
-
   .tips {
     margin-top:50px;
     font-size: 20px;

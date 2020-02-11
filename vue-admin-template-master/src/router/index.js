@@ -67,7 +67,7 @@ export const constantRoutes = [
         path: 'authorizationRecordQuery',
         name: '授权记录查询',
         component: () => import('@/views/authorizationRecordQuery/index'),
-        meta: { title: '授权记录查询', icon: 'table' }
+        meta: { title: '授权记录查询', icon: 'table', affix: true }
       }
     ]
   },

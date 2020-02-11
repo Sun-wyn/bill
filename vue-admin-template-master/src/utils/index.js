@@ -8,6 +8,7 @@
  * @param {string} cFormat
  * @returns {string | null}
  */
+
 export function parseTime(time, cFormat) {
   if (arguments.length === 0) {
     return null
@@ -85,6 +86,7 @@ export function formatTime(time, option) {
     )
   }
 }
+
 
 /**
  * @param {string} url
